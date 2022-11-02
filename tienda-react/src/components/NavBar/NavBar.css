@@ -1,0 +1,31 @@
+.menu-navBar{
+    display: flex;
+ justify-content: space-between;
+   background-color: rgb(156, 151, 151);
+}
+
+.titulo{
+ color: rgb(24, 20, 21);
+   margin: 30px;
+}
+
+.menu-lista{
+display: flex ;
+flex-direction: row;
+list-style-type: none;
+color: rgb(9, 8, 14);
+font-weight: bolder;
+font-size: 17px;
+margin: auto;
+
+}
+
+
+.lista{
+    display: flex;
+margin: auto;
+    margin: 20px;
+    text-decoration: none;
+color:rgb(53, 6, 35);
+font-size: 22px;
+}

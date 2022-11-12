@@ -4,7 +4,7 @@ import "./NavBar.css";
 const NavBar = () => {
   return (
     <div className="menu-navBar">
-      <h1 className="titulo">CLETA</h1>
+      <h1 className="titulo">Theo</h1>
       <ul className="menu-lista">
         <li>
           <a href="" className="lista">

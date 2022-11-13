@@ -22,3 +22,10 @@ export const data = [
         imagen : "pantalonVerde"
 }
 ]
+export const getProducts = () => {
+    return new Promise((res) => {
+        setTimeout(() => {
+            res(data);
+        }, 2000);
+    });
+  }

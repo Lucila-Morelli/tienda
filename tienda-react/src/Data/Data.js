@@ -1,27 +1,29 @@
+
 export const data = [
     {
         id: 1,
-        nombre : "body",
+        nombre : "Body",
         talla : "G y Xg",
         color: "Gris",
-        imagen : "bodyGris"
+        imagen : '../assets/bodyGris.png'
     },
 
     {
         id: 2, 
-        nombre : "remeras",
-        talla : "xs",
+        nombre : "Remera",
+        talla : "XS",
         color : "rojo",
-        imagen : "remeraRoja",
+        imagen : '../assets/remeraRoja.png'
 },
     {
         id: 3,
-        nombre : "pantalon",
+        nombre : "Pantalon",
         talla : "G",
         color: " verde",
-        imagen : "pantalonVerde"
+        imagen : '../assets/pantalonVerde.png'
 }
 ]
+
 export const getProducts = () => {
     return new Promise((res) => {
         setTimeout(() => {

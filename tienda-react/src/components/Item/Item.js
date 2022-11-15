@@ -1,16 +1,13 @@
+import  './Item.css'
 const Item = ({producto}) => {
   return (
-    <div>
-        <img alt={producto.nombre} src={`images/${producto.imagen}.png`} />
-        <div>
-        <h2>Nombre del producto{producto.nombre} </h2>
-        <h2>Talla del producto{producto.talla} </h2>
-        <h2>Color del producto{producto.color} </h2>
-
-        </div>
-       
-           
-
+    <div className="data">
+        <img className='imagen' alt={producto.nombre} src={producto.imagen}/>
+       <div className='titulazo'> 
+        <h2>Producto: {producto.nombre} </h2>
+        <h2>Talles disponibles: {producto.talla} </h2>
+        <h2>Color: {producto.color} </h2>
+</div>
 </div>
   )
 }

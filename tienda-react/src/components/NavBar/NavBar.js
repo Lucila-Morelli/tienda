@@ -7,17 +7,17 @@ const NavBar = () => {
       <h1 className="titulo">Theo</h1>
       <ul className="menu-lista">
         <li>
-          <a href="" className="lista">
+          <a href="V" className="lista">
             Productos
           </a>
         </li>
         <li>
-          <a href="" className="lista">
+          <a href="V" className="lista">
             Promociones
           </a>
         </li>
         <li>
-          <a href="" className="lista">
+          <a href="V" className="lista">
             Contacto
           </a>
         </li>

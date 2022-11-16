@@ -8,20 +8,17 @@ const NavBar = () => {
       <h1 className="titulo">Theo</h1>
       <ul className="menu-lista">
         <li className="lista">
-         <NavLink to= "/" 
-         className={({isActive })=> isActive ? "active" : "inactive" } >
+         <NavLink to= "/"  >
           Inicio
          </NavLink>
         </li>
         <li className="lista">
-        <NavLink to= "/:body"
-         className={({isActive })=> isActive ? "active" : "inactive" } >
+        <NavLink to= "/category/body" >
           Body
          </NavLink>
         </li>
         <li className="lista">
-        <NavLink to= "/:remeras" 
-         className={({isActive })=> isActive ? "active" : "inactive" } >
+        <NavLink to= "/category/remeras"  >
           Remeras
          </NavLink>
         </li>

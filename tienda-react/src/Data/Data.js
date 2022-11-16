@@ -27,10 +27,17 @@ export const data = [
 }
 ]
 
-export const getProducts = () => {
-    return new Promise((res) => {
-        setTimeout(() => {
+export const getProducts = new Promise ((res , rej) => {
+    setTimeout(() => {
+        if (categoryName){
+            const filterData = data.filter((item) =>{
+                return item.category === categoryName;
+            });
+            console.log(filterData);
+            res(filterData);
+        } else {
             res(data);
-        }, 2000);
-    });
-  }
+        }
+    }, 1000);
+});
+  

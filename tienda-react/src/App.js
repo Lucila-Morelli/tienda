@@ -13,7 +13,8 @@ function App() {
 <BrowserRouter>
 <NavBar/> 
 <Routes>
-  <Route path='/:filtrado' element={<ItemListContainer/>}/>
+  <Route path='/' element={<ItemListContainer/>}/>
+  <Route path='/category/:categoryName' element={<ItemListContainer/>}/>
   <Route path="ItemList" element= {<ItemList/>} />
   <Route path="cartWidget" element= {<CartWidget/>} />
   

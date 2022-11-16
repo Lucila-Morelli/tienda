@@ -1,6 +1,6 @@
 .menu-navBar{
     display: flex;
- justify-content: space-between;
+ justify-content: flex-end ;
    background-color: rgb(150, 47, 7);
 }
 
@@ -28,4 +28,8 @@ margin: auto;
     text-decoration: none;
 color:rgb(238, 231, 235);
 font-size: 22px;
+}
+
+.active{
+    color:antiquewhite;
 }

@@ -5,7 +5,8 @@ export const data = [
         nombre : "Body",
         talla : "G y Xg",
         color: "Gris",
-        imagen : '../assets/bodyGris.png'
+        imagen : '../assets/bodyGris.png',
+        precio: "$980"
     },
 
     {
@@ -13,14 +14,16 @@ export const data = [
         nombre : "Remera",
         talla : "XS",
         color : "rojo",
-        imagen : '../assets/remeraRoja.png'
+        imagen : '../assets/remeraRoja.png',
+        precio: "$1500"
 },
     {
         id: 3,
         nombre : "Pantalon",
         talla : "G",
         color: " verde",
-        imagen : '../assets/pantalonVerde.png'
+        imagen : '../assets/pantalonVerde.png',
+        precio: "$1600"
 }
 ]
 

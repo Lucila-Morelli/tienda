@@ -1,32 +1,35 @@
 import React from "react";
 import CartWidget from "../CartWidget/CartWidget";
-import {Link} from "react-router-dom";
+import {Link , NavLink} from "react-router-dom";
 import "./NavBar.css";
 const NavBar = () => {
   return (
     <div className="menu-navBar">
       <h1 className="titulo">Theo</h1>
       <ul className="menu-lista">
-        <li>
-          <a href="V" className="lista">
-            Productos
-          </a>
+        <li className="lista">
+         <NavLink to= "/" 
+         className={({isActive })=> isActive ? "active" : "inactive" } >
+          Inicio
+         </NavLink>
+        </li>
+        <li className="lista">
+        <NavLink to= "/:body"
+         className={({isActive })=> isActive ? "active" : "inactive" } >
+          Body
+         </NavLink>
+        </li>
+        <li className="lista">
+        <NavLink to= "/:remeras" 
+         className={({isActive })=> isActive ? "active" : "inactive" } >
+          Remeras
+         </NavLink>
         </li>
         <li>
-          <a href="V" className="lista">
-            Promociones
-          </a>
-        </li>
-        <li>
-          <a href="V" className="lista">
-            Contacto
-          </a>
-        </li>
-        <li>
-         <Link to="/cart">Carrito</Link>
+         <Link to="/cart" className="carrito"><CartWidget/></Link>
         </li>
       </ul>
-      <CartWidget/>
+  
     </div>
   );
 };

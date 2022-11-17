@@ -10,12 +10,13 @@ const ItemListContainer = () => {
 const {categoryName} = useParams();
  console.log(categoryName);
 
-  useEffect(() => {
-    getProducts().then(respuesta => {
-      setProductList(respuesta);
-    });
-  }, [categoryName]);
-  console.log(productList);
+ useEffect(() => {
+  getProducts(
+categoryName
+).then(respuesta => {
+    setProductList(respuesta);
+  });
+}, [categoryName]);
   return (
 
     <div><ItemList productList={productList} /></div>

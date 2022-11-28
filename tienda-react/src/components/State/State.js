@@ -15,7 +15,7 @@ const State = () => {
   return (
     <div>
 
-<h2>Agregar al carrito</h2>
+
     <h2>{contador}</h2>
     
         <button onClick={sumar}>+</button>

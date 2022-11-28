@@ -4,12 +4,13 @@ import NavBar from './components/NavBar/NavBar';
 import ItemList from './components/ItemList/ItemList';
 import { BrowserRouter , Routes , Route } from 'react-router-dom';
 import CartWidget from './components/CartWidget/CartWidget';
+import {cartContext} from './context/CartProvider'
 
 
 function App() {
   return (
 <>
-
+<cartContext.Provider value={{carrito: []}}>
 <BrowserRouter>
 <NavBar/> 
 <Routes>
@@ -20,6 +21,8 @@ function App() {
   
   </Routes>
 </BrowserRouter>
+</cartContext.Provider>
+
 </>
   );
 }

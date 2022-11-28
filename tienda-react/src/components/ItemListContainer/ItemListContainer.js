@@ -19,7 +19,7 @@ categoryName
 }, [categoryName]);
   return (
 
-    <div><ItemList productList={productList} /></div>
+    <div className='lista'><ItemList productList={productList} /></div>
   );
 }
 

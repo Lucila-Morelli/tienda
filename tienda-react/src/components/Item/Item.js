@@ -1,4 +1,3 @@
-
 import { Link } from 'react-router-dom';
 import State from '../State/State';
 import  './Item.css'
@@ -6,7 +5,7 @@ import  './Item.css'
 const Item = ({producto}) => {
   
   return (
-    <Link to={'item/${producto.id} '}>
+    <Link to={`/item/${producto.id}`}>
     <div className="data">
       
         <img className='imagen' alt={producto.nombre} src={producto.imagen}/>

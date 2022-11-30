@@ -1,8 +1,9 @@
+import './ItemDetail.css'
 import React from 'react'
 
 const ItemDetail = ({productSelected}) => {
   return (
-    <div>
+    <div className='itemDetail'>
      
         <h2>{productSelected.nombre}</h2>
         <h2>{productSelected.talla} </h2>

@@ -7,7 +7,8 @@ export const data = [
         color: "Gris",
         imagen : '../assets/bodyGris.png',
         category : "body",
-        precio: "$980"
+        precio: "$980",
+        stock: 21
     },
 
     {
@@ -17,7 +18,8 @@ export const data = [
         color : "rojo",
         imagen : '../assets/remeraRoja.png',
         category : "remera",
-        precio: "$1500"
+        precio: "$1500",
+        stock: 6
 },
     {
         id: 3,
@@ -26,7 +28,8 @@ export const data = [
         color: " verde",
         imagen : '../assets/pantalonVerde.png',
         category : "pantalon",
-        precio: "$1600"
+        precio: "$1600",
+        stock: 15
 },
 {
     id: 4,
@@ -35,7 +38,8 @@ export const data = [
     color: " celeste",
     imagen : '../assets/bodyAzul.png',
     category :"body",
-    precio: "$1450"
+    precio: "$1450",
+    stock: 19
 },
 
 {
@@ -45,7 +49,8 @@ export const data = [
     color: " rosa",
     imagen : '../assets/pantalonRosa.png',
     category : "pantalon",
-    precio: "$1650"
+    precio: "$1650",
+    stock: 12
 },
 
 {
@@ -55,7 +60,8 @@ export const data = [
     color: " azul",
     imagen : '../assets/remeraCaballo.png',
     category : "remera",
-    precio: "$1700"
+    precio: "$1700",
+    stock: 15
 },
 
 {
@@ -65,7 +71,8 @@ export const data = [
     color: " Gris",
     imagen : '../assets/remeraAraña.png',
     category : "remera",
-    precio: "$1500"
+    precio: "$1500",
+    stock: 8
 },
 ]
 

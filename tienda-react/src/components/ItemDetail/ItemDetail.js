@@ -6,13 +6,13 @@ import ItemCount from '../ItemCount/ItemCount';
 const ItemDetail = ({productSelected}) => {
 
   const [count, setCount] = useState(1);
-  const {cart, addToCart} = useContext (cartContext);
+  const {cart, addToCart} = useContext(cartContext);
+  console.log(cart)
   return (
-    /* LA IMAGEN NO ME FUNCIONA */
+  
     <div className='itemDetail'>
-     <img 
-    src={'/images/${productSelected.imagen} '} 
-     />
+    <img className="img" alt={productSelected.nombre} src={productSelected.imagen} />
+    
         <h2>{productSelected.nombre}</h2>
         <h2>{productSelected.talla} </h2>
         <h2>{productSelected.color} </h2>
@@ -20,7 +20,8 @@ const ItemDetail = ({productSelected}) => {
         <h2>{productSelected.precio} </h2>
         <h2>{count} </h2>
       <ItemCount setCount={setCount} />
-      <button onClick={() => addToCart (productSelected, count)}>Agregar al carrito</button>
+ 
+      <button onClick={() => addToCart(productSelected, count)}>Agregar al carrito</button>
     </div>
   )
 }

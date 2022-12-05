@@ -10,11 +10,11 @@ const Item = ({producto}) => {
       
         <img className='imagen' alt={producto.nombre} src={producto.imagen}/>
        <div className='titulazo'> 
-        <h2> {producto.nombre} </h2>
-        <h2>Talles disponibles: {producto.talla} </h2>
-        <h2>Color: {producto.color} </h2>
-        <h2>{producto.precio} </h2>
-
+        <h2> {producto.title} </h2>
+       
+        <h2>Color: {producto.descripcion} </h2>
+        <h2>{producto.categoryId} </h2>
+        <h2>{producto.price} </h2>
 
 </div>
 </div>

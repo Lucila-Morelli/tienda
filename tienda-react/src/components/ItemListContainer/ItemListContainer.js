@@ -5,7 +5,8 @@ import {getProducts} from '../../Data/Data'*/
 import ItemList from '../ItemList/ItemList';
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import {getfirestore, collection , getDocs, query , where} from  'firebase/firestore'
+import {getFirestore, collection , getDocs, query , where} from  'firebase/firestore';
+
 
 const ItemListContainer = () => {
   const [productList, setProductList] = useState([]);
@@ -13,7 +14,7 @@ const {categoryName} = useParams();
  console.log(categoryName);
 
 const getProducts = () => {
-  const db = getfirestore();
+  const db = getFirestore();
   const querySnapshot = collection(db,'items' );
   if(categoryName){
     const queryFilter = query(
@@ -27,7 +28,7 @@ const getProducts = () => {
         return {id: item.id, ...item.data() };
       });
       console.log(response);
-      setItems(data);
+     
     })
     .catch((error) => {
       console.log(error);

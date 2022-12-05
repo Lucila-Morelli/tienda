@@ -11,13 +11,13 @@ const ItemDetail = ({productSelected}) => {
   return (
   
     <div className='itemDetail'>
-    <img className="img" alt={productSelected.nombre} src={productSelected.imagen} />
+    <img className="img" alt={productSelected.nombre} src={productSelected.imagenId} />
     
-        <h2>{productSelected.nombre}</h2>
-        <h2>{productSelected.talla} </h2>
-        <h2>{productSelected.color} </h2>
-        <h2>{productSelected.category} </h2>
-        <h2>{productSelected.precio} </h2>
+        <h2>{productSelected.title}</h2>
+        <h2>{productSelected.descripcion} </h2>
+        <h2>{productSelected.categoryId} </h2>
+        
+        <h2>{productSelected.price} </h2>
         <h2>{count} </h2>
       <ItemCount setCount={setCount} />
  

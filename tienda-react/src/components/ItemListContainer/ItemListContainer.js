@@ -9,20 +9,34 @@ import {getFirestore, collection , getDocs, query , where} from  'firebase/fires
 
 
 const ItemListContainer = () => {
-  const [productList, setProductList] = useState([]);
+  const [item, setItems] = useState([]);
 const {categoryName} = useParams();
  console.log(categoryName);
 
 const getProducts = () => {
   const db = getFirestore();
-  const querySnapshot = collection(db,'items' );
+  const querySnapshot = collection(db,'item' );
   if(categoryName){
     const queryFilter = query(
       querySnapshot,
-      where('categoeyId', '==' , categoryName)
+      where('categoryId', '==' , categoryName)
     );
-  } else {
-    getDocs(querySnapshot).then((response) =>{
+    getDocs(queryFilter)
+    .then((response) =>{
+      const data = response.docs.map((item)=>{
+      return {id: item.id , ...item.data()};
+    }) ;
+    console.log(data);
+   setItems(data);
+    }) 
+  
+  .catch((error) => {
+    console.log(error);
+    });
+  
+  }    else {
+    getDocs(querySnapshot)
+    .then((response) =>{
       const data = response.docs.map((item) => {
         console.log(item.data());
         return {id: item.id, ...item.data() };
@@ -53,7 +67,7 @@ categoryName
 */
   return (
 
-    <div className='lista'><ItemList productList={productList} /></div>
+    <div className='lista'><ItemList productList={item} /></div>
   );
 }
 

@@ -75,7 +75,7 @@ export const data = [
     stock: 8
 },
 ]
-
+/*
 export const getProducts = (  categoryName) => {
     console.log(categoryName)
         return new Promise((res , rej) => {
@@ -92,4 +92,4 @@ export const getProducts = (  categoryName) => {
             }, 1000);
         })
     }
-    
+    */

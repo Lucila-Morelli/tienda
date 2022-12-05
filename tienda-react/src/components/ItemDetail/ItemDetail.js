@@ -26,4 +26,5 @@ const ItemDetail = ({productSelected}) => {
   )
 }
 
+
 export default ItemDetail

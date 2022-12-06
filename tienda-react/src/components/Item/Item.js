@@ -8,7 +8,7 @@ const Item = ({producto}) => {
     <Link to={`/item/${producto.id}`}>
     <div className="data">
       
-        <img className='imagen' alt={producto.nombre} src={producto.imagen}/>
+        <img className='imagen' alt={producto.nombre} src={producto.imagenId}/>
        <div className='titulazo'> 
         <h2> {producto.title} </h2>
        

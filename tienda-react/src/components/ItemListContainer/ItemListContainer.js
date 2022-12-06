@@ -34,19 +34,16 @@ const getProducts = () => {
     console.log(error);
     });
   
-  }    else {
+  } else {
     getDocs(querySnapshot)
-    .then((response) =>{
-      const data = response.docs.map((item) => {
-        console.log(item.data());
-        return {id: item.id, ...item.data() };
-      });
-      console.log(response);
-     
-    })
-    .catch((error) => {
-      console.log(error);
-    })
+        .then((response) => {
+            const data = response.docs.map((item) => {
+                console.log(item.data());
+                return { id: item.id, ...item.data() };
+            });
+            console.log(response);
+            setItems(data);
+        })
 
   }
  

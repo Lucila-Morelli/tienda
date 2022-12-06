@@ -7,8 +7,7 @@ const CartContainer = () => {
   return (
     <div>
         <h1>Los productos de tu carrito:</h1>
-        <h2> {producto.title} </h2>
-        <h2> {producto.price} </h2>
+    
         
     </div>
   )

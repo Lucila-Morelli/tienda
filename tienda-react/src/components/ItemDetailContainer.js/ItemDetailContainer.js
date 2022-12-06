@@ -7,22 +7,27 @@ const ItemDetailContainer = () => {
     const [productSelected , setProductSelected] = useState({});
     const{id} = useParams();
 
-    const getProducts = () =>{
-      const db = getFirestore ();
-      const query = doc (db, 'item', id);
-      getDoc(query)
-      .then((response)=> {
-        console.log(response.data());
-        setProductSelected({id: response.id, ...response.data()});
-      })
-      .catch((error) => console.log(error));
-
-    }
-
     useEffect(() => {
-        getProducts(id)
-        .then((res)=> setProductSelected(res))
-    }, [id]);
+      // creamos la función asíncrona
+            const getProducto = async () => {
+              const db = getFirestore ();
+      // con el método doc, vamos a hacer el filtro
+              const queryRef = doc(db, "item", id);
+      // recibimos los datos
+              const response = await getDoc(queryRef);
+      // creamos un nuevo objeto con esos datos
+              const newItem = {
+                id: response.id,
+                ...response.data(),
+              };
+      // simulando una demora actualizamos el estado
+              setTimeout(()=>{
+                setProductSelected(newItem);
+              }, 2000)
+            };
+      // llamamos a la función
+            getProducto();
+          }, [id]);
     
     return (
     <div>

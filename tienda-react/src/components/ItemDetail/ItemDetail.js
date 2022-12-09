@@ -11,17 +11,21 @@ const ItemDetail = ({productSelected}) => {
   return (
   
     <div className='itemDetail'>
-    <img className="img" alt={productSelected.nombre} src={productSelected.imagenId} />
-    
-        <h2>{productSelected.title}</h2>
+     <img
+        alt={productSelected.title}
+        src={`/assets/${productSelected.imagenId}`}
+        width={'300px'}
+      />
+         <h2>{productSelected.categoryId} </h2>
         <h2>{productSelected.descripcion} </h2>
-        <h2>{productSelected.categoryId} </h2>
-        
-        <h2>{productSelected.price} </h2>
+
+        <h2>Precio: ${productSelected.price} </h2>
+
+        <h2>Stock: {productSelected.stock} </h2>
         <h2>{count} </h2>
       <ItemCount setCount={setCount} />
  
-      <button onClick={() => addToCart(productSelected, count)}>Agregar al carrito</button>
+      <button className='buttonCount' onClick={() => addToCart(productSelected, count)}>Agregar al carrito</button>
     </div>
   )
 }

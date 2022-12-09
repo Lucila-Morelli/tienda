@@ -1,0 +1,29 @@
+.buttonCompra{
+    background-color: rgb(240, 11, 11);
+    color: black ;
+
+    font-weight: bold;
+    
+    margin-left: 40px;
+}
+h2{
+    margin-left: 40px;
+}
+
+.imagenC{
+    margin: 40x;
+    font-size: 45px;
+}
+
+h3{
+    margin-left:40px;
+ font-size: 23px;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 14px;
+}
+

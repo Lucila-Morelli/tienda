@@ -1,3 +1,5 @@
+import './ItemCount.css';
+
 
 const ItemCount = ( {setCount }) => {
     const addItem = () => {
@@ -17,8 +19,8 @@ const ItemCount = ( {setCount }) => {
 
     return (
         <div>
-            <button onClick={addItem}>Agregar</button>
-            <button onClick={removeItem}>Quitar</button>
+            <button className="buttonCount" onClick={addItem}>Agregar</button>
+            <button className="buttonCount" onClick={removeItem}>Quitar</button>
         </div>
     );
 };

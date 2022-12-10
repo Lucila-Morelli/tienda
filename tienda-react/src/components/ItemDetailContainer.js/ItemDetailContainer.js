@@ -23,7 +23,7 @@ const ItemDetailContainer = () => {
       // simulando una demora actualizamos el estado
               setTimeout(()=>{
                 setProductSelected(newItem);
-              }, 2000)
+              }, 1000)
             };
       // llamamos a la función
             getProducto();

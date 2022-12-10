@@ -68,6 +68,7 @@ const handleInputChange = (event) => {
 
   return (
     <div>
+     <h2 className='tituloCarrito'>Sus productos seleccionados</h2> 
           {cart.map((product) => (
         <div key={product.id} >
           <img className='imagenC'
@@ -77,18 +78,16 @@ const handleInputChange = (event) => {
           />
           <h2>{product.title}</h2>
           
-          <h2>{product.descripcion}</h2>
-          <h2>{product.quantity}</h2>
+          <h2>Color: {product.descripcion}</h2>
+          <h2>Productos agregados: {product.quantity}</h2>
 
-          <h2>Precio: ${product.price}</h2>
+          <h2>Precio: ${product.price} por unidad</h2>
         </div>
       ))}
       
    
-      <h3>Total: ${total} </h3>
-      <button  className='buttonCompra' onClick={createOrder}>Comprar</button>
 
-      <h3>Formulario</h3>
+      <h3 className='dato'>Datos del comprador</h3>
       <div  className='formulario'>
       <input
             name="name"
@@ -113,6 +112,10 @@ const handleInputChange = (event) => {
           />
 
       </div>
+
+      
+      <h3>Total: ${total} </h3>
+      <button  className='buttonCompra' onClick={createOrder}>Comprar</button>
       
     </div>
 

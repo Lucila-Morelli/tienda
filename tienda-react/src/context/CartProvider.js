@@ -15,6 +15,7 @@ const isInCart = (id) => {
         if(isInCart(product.id)){
             alert("El producto ya se encuentra en el carrtio");
         }
+  
         else{
             setCart ([...cart, {...product, quantity}]);
         }

@@ -1,3 +1,5 @@
+Este proyecto es una idea de e-commerce de ventas de ropa de bebe, con tres categorías distintas (bodys, remeras y pantalones), donde pueden agregarse al carrito y generar una orden para realizar la compra.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

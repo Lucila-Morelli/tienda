@@ -27,7 +27,7 @@ const isInCart = (id) => {
         setCart ([])
     };
 return(
-    <cartContext.Provider value= {{cart, addToCart}}>
+    <cartContext.Provider value= {{cart, addToCart, clear}}>
         {children}
     </cartContext.Provider>
 )

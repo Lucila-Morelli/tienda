@@ -52,6 +52,7 @@ const getProducts = () => {
 
 useEffect(() =>{
   getProducts();
+  // eslint-disable-next-line
 } ,[categoryName])
 
 /*

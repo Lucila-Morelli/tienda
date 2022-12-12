@@ -54,6 +54,7 @@ addDoc(query, newOrder)
 
 useEffect (() => {
   getTotalPrice();
+  // eslint-disable-next-line
 }, [cart])
 
 
